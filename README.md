@@ -51,13 +51,6 @@ This project models a minimal CubeSat Electrical Power Subsystem (EPS) using Cir
 
 ---
 
-## Assumptions
-- Orbit: 90 min, 60 min sun, 30 min eclipse.
-- Ideal battery and solar panel, except series resistances.
-- SOC estimated qualitatively via battery current.
-
----
-
 ## Tools Used
 - CircuitJS ([https://www.falstad.com/circuit/circuitjs.html](https://www.falstad.com/circuit/circuitjs.html))
 - AI Assistance: ChatGPT (component selection and Pulse workaround guidance)
@@ -86,3 +79,4 @@ This project models a minimal CubeSat Electrical Power Subsystem (EPS) using Cir
 ## Limitations
 - SOC not quantitatively implemented due to CircuitJS limitations.
 - Pulse sources used for TT&C/Payload instead of VC switches.
+
