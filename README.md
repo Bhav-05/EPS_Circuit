@@ -18,12 +18,12 @@ This project models a minimal CubeSat Electrical Power Subsystem (EPS) using Cir
 
 2. **Component Mapping**
 | EPS Function       | CircuitJS Component             | Specification / Notes |
-|-------------------|---------------------------------|---------------------|
+|---------------- ---|-------------------------------- -|---------------------|
 | Solar Panel + MPPT | Pulse Voltage Source + Resistor | 9 V sun, 0 V eclipse, 2 Ω series |
-| Capacitor  (SOC)        | Capacitor + Series r   | 7.4 V, 0.5 Ω series |
-| OBC / Housekeeping | Resistor                      | 56 Ω, always on |
-| TT&C               | Resistor + Pulse Voltage       | 18 Ω Short bursts via pulse |
-| Payload            | Resistor + Pulse Voltage       | 27 ΩActive during sun only |
+| Capacitor  (SOC)   | Capacitor + Series r            | 7.4 V, 0.5 Ω series |
+| OBC / Housekeeping | Resistor                        | 56 Ω, always on |
+| TT&C               | Resistor + Pulse Voltage        | 18 Ω Short bursts via pulse |
+| Payload            | Resistor + Pulse Voltage        | 27 ΩActive during sun only |
 
 ## ⚙️ Assumptions
 1.*Orbit profile**: 90-minute orbit scaled down to 5.4 seconds (3.6 s sun, 1.8 s eclipse).
@@ -79,4 +79,5 @@ This project models a minimal CubeSat Electrical Power Subsystem (EPS) using Cir
 ## Limitations
 - SOC not quantitatively implemented due to CircuitJS limitations.
 - Pulse sources used for TT&C/Payload instead of VC switches.
+
 
